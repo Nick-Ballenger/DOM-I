@@ -69,11 +69,14 @@ let ctaHead = document.querySelector('h1');
 ctaHead.textContent = siteContent.cta['h1']; 
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent.cta['button'];
+ctaButton.style.borderRadius = '10px'
+ctaButton.style.backgroundColor = 'grey'
 let ctaImg = document.getElementById('cta-img')
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['mainContent']['middle-img-src']);
+
 let hTag = document.querySelectorAll('h4');
 
 hTag[0].textContent = siteContent.mainContent["features-h4"]
@@ -83,8 +86,9 @@ hTag[3].textContent = siteContent.mainContent["product-h4"]
 hTag[4].textContent = siteContent.mainContent["vision-h4"]
 hTag[5].textContent = siteContent.contact["contact-h4"]
 
+//selects ptags
 let pTag = document.querySelectorAll('p');
-
+//assigns ptags
 pTag[0].textContent = siteContent.mainContent ['features-content']
 pTag[1].textContent = siteContent.mainContent ['about-content']
 pTag[2].textContent = siteContent.mainContent ['services-content']
@@ -107,3 +111,6 @@ newATag1.textContent = "Poop";
 let newAnchor = document.querySelector('nav');
 newAnchor.append(newATag);
 newAnchor.prepend(newATag1);
+
+let ctaselector = document.querySelector('.cta');
+console.log(ctaselector);
