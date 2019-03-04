@@ -55,6 +55,16 @@ aTag[2].textContent = siteContent.nav["nav-item-3"];
 aTag[3].textContent = siteContent.nav["nav-item-4"];
 aTag[4].textContent = siteContent.nav["nav-item-5"];
 
+// const newATag = document.createElement('a');
+// const newBR = document.createElement('br');
+// const newATag1 = document.createElement('a');
+
+// newATag.textContent ="blog";
+// newATag1.textContent = "poop";
+
+
+
+
 let ctaHead = document.querySelector('h1');
 ctaHead.textContent = siteContent.cta['h1']; 
 let ctaButton = document.querySelector('button');
@@ -83,7 +93,17 @@ pTag[4].textContent = siteContent.mainContent["vision-content"]
 pTag[5].textContent = siteContent.contact["address"]
 pTag[6].textContent = siteContent.contact["phone"]
 pTag[7].textContent = siteContent.contact["email"]
+pTag[8].textContent = siteContent.footer['copyright']
 
 
 
+const newATag = document.createElement('a');
+const newBR = document.createElement('br');
+const newATag1 = document.createElement('a');
 
+newATag.textContent ="Blog";
+newATag1.textContent = "Poop";
+
+let newAnchor = document.querySelector('nav');
+newAnchor.append(newATag);
+newAnchor.prepend(newATag1);
