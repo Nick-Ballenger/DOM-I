@@ -65,8 +65,7 @@ ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['mainContent']['middle-img-src']);
 let hTag = document.querySelectorAll('h4');
-let htagArray= Array.from(hTag);
-console.log(htagArray);
+
 hTag[0].textContent = siteContent.mainContent["features-h4"]
 hTag[1].textContent = siteContent.mainContent["about-h4"]
 hTag[2].textContent = siteContent.mainContent["services-h4"]
@@ -74,7 +73,17 @@ hTag[3].textContent = siteContent.mainContent["product-h4"]
 hTag[4].textContent = siteContent.mainContent["vision-h4"]
 hTag[5].textContent = siteContent.contact["contact-h4"]
 
+let pTag = document.querySelectorAll('p');
 
-// hTag[0].textContent = siteContent.main-Content['features-h4']
-// // hTag[0].textContent = siteContent.main-content['features-h4'];
-// console.log(hTag);
+pTag[0].textContent = siteContent.mainContent ['features-content']
+pTag[1].textContent = siteContent.mainContent ['about-content']
+pTag[2].textContent = siteContent.mainContent ['services-content']
+pTag[3].textContent = siteContent.mainContent ['product-content']
+pTag[4].textContent = siteContent.mainContent["vision-content"]
+pTag[5].textContent = siteContent.contact["address"]
+pTag[6].textContent = siteContent.contact["phone"]
+pTag[7].textContent = siteContent.contact["email"]
+
+
+
+
