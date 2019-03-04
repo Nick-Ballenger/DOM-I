@@ -57,3 +57,12 @@ aTag[4].textContent = siteContent.nav["nav-item-5"];
 
 let ctaHead = document.querySelector('h1');
 ctaHead.textContent = siteContent.cta['h1']; 
+let ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent.cta['button'];
+let ctaImg = document.getElementById('cta-img')
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+// let ctaButton = document.querySelector('.cta-text');
+// ctaButton.textContent = siteContent.cta['button'];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
