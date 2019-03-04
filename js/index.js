@@ -18,7 +18,7 @@ const siteContent = {
     "img-src": "img/header-img.png"
   },
 
-  "main-content": {
+  "mainContent": {
     "features-h4":"Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "about-h4":"About",
@@ -61,8 +61,20 @@ let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent.cta['button'];
 let ctaImg = document.getElementById('cta-img')
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
-// let ctaButton = document.querySelector('.cta-text');
-// ctaButton.textContent = siteContent.cta['button'];
 
 let middleImg = document.getElementById('middle-img');
-middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+middleImg.setAttribute('src', siteContent['mainContent']['middle-img-src']);
+let hTag = document.querySelectorAll('h4');
+let htagArray= Array.from(hTag);
+console.log(htagArray);
+hTag[0].textContent = siteContent.mainContent["features-h4"]
+hTag[1].textContent = siteContent.mainContent["about-h4"]
+hTag[2].textContent = siteContent.mainContent["services-h4"]
+hTag[3].textContent = siteContent.mainContent["product-h4"]
+hTag[4].textContent = siteContent.mainContent["vision-h4"]
+hTag[5].textContent = siteContent.contact["contact-h4"]
+
+
+// hTag[0].textContent = siteContent.main-Content['features-h4']
+// // hTag[0].textContent = siteContent.main-content['features-h4'];
+// console.log(hTag);
