@@ -1,6 +1,3 @@
-
-
-
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
@@ -112,5 +109,12 @@ let newAnchor = document.querySelector('nav');
 newAnchor.append(newATag);
 newAnchor.prepend(newATag1);
 
+
 let ctaselector = document.querySelector('.cta');
 console.log(ctaselector);
+
+aTag.forEach( function( currentValue ){
+  currentValue.style.color = 'green';
+});
+newATag.style.color = 'green';
+newATag1.style.color = 'green';
